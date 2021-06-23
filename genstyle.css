@@ -1,0 +1,102 @@
+
+  @font-face {
+    font-family:'dungeonsc8';
+    src: url('dungeonsc8.ttf') format('truetype');
+  }
+  * {
+    font-family: dungeonsc8, monospace;
+    font-size: 24px;
+    box-sizing: border-box;
+    line-height: 27px;
+  }
+  .fram {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    padding: 35px;
+  }
+  .box0 {
+    border: 3px solid black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box- {
+    border: 3px solid black;
+    margin: 0px 1px 0px 0px;
+    padding: 3px 0px 0px 3px;
+  }
+  .ctn0 {
+    border: 1px solid black;
+    width: auto;
+    height: auto;
+    padding: 3px 0px 0px 3px;
+  }
+  .ctn1 {
+    border: none;
+    width: auto;
+    height: auto;
+    padding: 0px;
+    float: left;
+  }
+  .box1 {
+    border: 3px solid black;
+    margin: 0px 3px 3px 0px;
+    padding: 5px 3px 1px 6px;
+    float: right;
+  }
+  .btn0 {
+    border-style: solid black;
+    border-width: 3px 6px;
+    width: 18px;
+    height: 21px;
+    padding: 0px;
+    margin: 1px 3px 3px 0px;
+    float: left;
+  }
+  select {
+    border: none;
+    background: rgba(0,0,0,0);
+    width: 251px;
+    padding: 3px 0px 0px 0px;
+    margin: -4px -1px -1px -13px;
+  }
+  select:invalid {
+    color: gray;
+    padding: 1px 0px 2px 0px;
+    margin: -4px -1px -1px -13px;
+  }
+  input {
+    border: none;
+    background: rgba(0,0,0,0);
+    padding: 4px 1px 1px 4px;
+    margin: -4px -1px -1px 2px;
+    text-align: right;
+  }
+  .inp0 {
+    width: 401px;
+    text-align: left;
+  }
+  .inp1 {
+    width: 41px;
+    margin-right: -16px;
+  }
+  .inp2 {
+    width: 62px;
+    margin-right: -16px;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+     margin: 0px 0px 2px 0px;
+  }
+  .bbr {
+    line-height: 42px;
+  }
+  .txt0 {
+    margin: 0px -6px 0px 6px;
+  }
+  .txt1 {
+    margin: 0px 6px 0px 0px;
+  }
