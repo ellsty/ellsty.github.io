@@ -59,7 +59,7 @@
   select {
     border: none;
     background: rgba(0,0,0,0);
-    width: 251px;
+    width: 269px;
     padding: 3px 0px 0px 0px;
     margin: -4px -1px -1px -13px;
   }
@@ -76,7 +76,7 @@
     text-align: right;
   }
   .inp0 {
-    width: 401px;
+    width: 419px;
     text-align: left;
   }
   .inp1 {
@@ -99,4 +99,7 @@
   }
   .txt1 {
     margin: 0px 6px 0px 0px;
+  }
+  .txt2 {
+    margin: 0px 3px 0px 0px;
   }

@@ -22,12 +22,12 @@
           </div>
         <br class="bbr">
           <div class="box1">
-            str>(__)<br>
-            dex>(__)<br>
-            con>(__)<br>
-            int>(__)<br>
-            wis>(__)<br>
-            cha>(__)
+            str>(<span id="str">__</span>)<br>
+            dex>(<span id="dex">__</span>)<br>
+            con>(<span id="con">__</span>)<br>
+            int>(<span id="int">__</span>)<br>
+            wis>(<span id="wis">__</span>)<br>
+            cha>(<span id="cha">__</span>)
           </div>
           <div class="box1">
             <button class="btn0" onclick="scoregen('strsco')"></button>><input id="strsco" class="inp2" type="number" min="1" max="28" placeholder="00"><br>
@@ -45,8 +45,8 @@
           </div>
         <br class="bbr">
           <div class="box1">
-            pri>[___]<br>
-            hit><span class="txt0">_</span>(d_)<br>
+            pri>[<span id="pri">___</span>]<br>
+            hit><span class="txt0" id="dienum">_</span>(d<span id="die">_</span>)<br>
             <button class="btn0" onclick="armorgen()"></button>>
             <select required id="arm">
               <option value="" disabled selected hidden>armor</option>
@@ -64,21 +64,22 @@
               <option value="12">plate</option>
             </select>
           <br>
-            <button class="btn0" onclick=""></button>>
+            <button class="btn0" onclick="racegen()"></button>>
             <select required id="rac">
               <option value="" disabled selected hidden>race</option>
               <option value="1">dragonborn</option>
               <option value="2">dwarf</option>
               <option value="3">elf</option>
               <option value="4">gnome</option>
-              <option value="5">halfelf</option>
-              <option value="6">halfling</option>
-              <option value="7">halforc</option>
-              <option value="8">human</option>
-              <option value="9">tiefling</option>
+              <option value="5">goblin</option>
+              <option value="6">halfelf</option>
+              <option value="7">halfling</option>
+              <option value="8">halforc</option>
+              <option value="9">human</option>
+              <option value="10">tiefling</option>
             </select>
           <br>
-            <button class="btn0" onclick=""></button>>
+            <button class="btn0" onclick="classgen()"></button>>
             <select required id="cla">
               <option value="" disabled selected hidden>class</option>
               <option value="1">artificer</option>
@@ -97,20 +98,23 @@
             </select>
           </div>
           <div class="box1">
-            in>(__)<br>
-            hp>(__)<br>
-            ac>(__)<br>
-            sp>(__)<br>
-            dc>{__}
+            in>(<span id="in">__</span>)<br>
+            hp>(<span id="hp">__</span>)<br>
+            ac>(<span id="ac">__</span>)<br>
+            sp>(<span id="sp">__</span>)<br>
+            dc>{<span id="dc">__</span>}
           </div>
         </div>
       <br>
         <div class="ctn1">
           <div class="box1">
-            <button class="btn0" onclick=""></button><span class="txt1">></span>something
+            <button class="btn0" onclick="location.reload();"></button><span class="txt1">></span>x
           </div>
           <div class="box1">
-            <button class="btn0" onclick=""></button><span class="txt1">></span>calculate
+            <button class="btn0" onclick="generate(),calcall()"></button><span class="txt1">></span>create
+          </div>
+          <div class="box1">
+            <button class="btn0" onclick="calcall()"></button><span class="txt1">></span>calculate
           </div>
           <div class="box1">
             <button class="btn0" onclick="generate()"></button><span class="txt1">></span>generate
@@ -122,6 +126,7 @@
 
 <script src="namegen.js"></script>
 <script src="statgen.js"></script>
+<script src="calculate.js"></script>
 
 </body>
 
