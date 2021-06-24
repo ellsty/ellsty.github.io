@@ -90,44 +90,49 @@ function calcac() {
   dexmod = calcmod("dexsco");
 
   if      (arm == 1) {
-    document.getElementById("ac").innerHTML = 11 + dexmod;
+    ac = 11 + dexmod;
   }
   else if (arm == 2) {
-    document.getElementById("ac").innerHTML = 11 + dexmod;
+    ac = 11 + dexmod;
   }
   else if (arm == 3) {
-    document.getElementById("ac").innerHTML = 12 + dexmod;
+    ac = 12 + dexmod;
   }
   else if (arm == 4) {
-    document.getElementById("ac").innerHTML = 12 + dexmod;
+    ac = 12 + dexmod;
   }
   else if (arm == 5) {
-    document.getElementById("ac").innerHTML = 13 + dexmod;
+    ac = 13 + dexmod;
   }
   else if (arm == 6) {
-    document.getElementById("ac").innerHTML = 14 + dexmod;
+    ac = 14 + dexmod;
   }
   else if (arm == 7) {
-    document.getElementById("ac").innerHTML = 14 + dexmod;
+    ac = 14 + dexmod;
   }
   else if (arm == 8) {
-    document.getElementById("ac").innerHTML = 15 + dexmod;
+    ac = 15 + dexmod;
   }
   else if (arm == 9) {
-    document.getElementById("ac").innerHTML = 14;
+    ac = 14;
   }
   else if (arm == 10) {
-    document.getElementById("ac").innerHTML = 16;
+    ac = 16;
   }
   else if (arm == 11) {
-    document.getElementById("ac").innerHTML = 17;
+    ac = 17;
   }
   else if (arm == 12) {
-    document.getElementById("ac").innerHTML = 18;
+    ac = 18;
   }
   else {
-    document.getElementById("ac").innerHTML = "--";
+    ac = "--";
   }
+  if (ac < 10) {
+    document.getElementById("ac").innerHTML = '<span class="txt1"> </span>' + dc;
+  }
+  else {
+    document.getElementById("ac").innerHTML = dc;
 }
 
 // SPEED CALC
