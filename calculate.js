@@ -126,13 +126,14 @@ function calcac() {
     ac = 18;
   }
   else {
-    ac = "--";
+    ac = "__";
   }
   if (ac < 10) {
-    document.getElementById("ac").innerHTML = '<span class="txt1"> </span>' + dc;
+    document.getElementById("ac").innerHTML = '<span class="txt1"> </span>' + ac;
   }
   else {
-    document.getElementById("ac").innerHTML = dc;
+    document.getElementById("ac").innerHTML = ac;
+  }
 }
 
 // SPEED CALC
@@ -144,10 +145,14 @@ function calcsp() {
       rac == 5||
       rac == 7) {
     sp = 25 + (5 * dexmod);
-    document.getElementById("sp").innerHTML = sp;
   }
   else {
     sp = 30 + (5 * dexmod);
+  }
+  if (sp < 10) {
+    document.getElementById("sp").innerHTML = '<span class="txt1"> </span>' + sp;
+  }
+  else {
     document.getElementById("sp").innerHTML = sp;
   }
 }
@@ -202,7 +207,7 @@ function calcdc() {
     pri = calcmod("chasco");
   }
   else {
-    document.getElementById("pri").innerHTML = "---";
+    document.getElementById("pri").innerHTML = "___";
     pri = 0
   }
 
