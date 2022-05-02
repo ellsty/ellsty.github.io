@@ -1,7 +1,7 @@
 
   @font-face {
     font-family: 'hold462b';
-    src: url('../fonts/hold462b.ttf') format('truetype');
+    src: url('hold462b.ttf') format('truetype');
   }
   * {
     font-family: 'hold462b';
