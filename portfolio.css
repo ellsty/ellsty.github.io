@@ -1,0 +1,115 @@
+@font-face {
+  font-family: 'hold462b';
+  src: url('fonts/hold462b.ttf') format('truetype');
+}
+* {
+  color: var(--one);
+  background: none;
+  font-family: 'hold462b';
+  font-size: 20px;
+  line-height: 28px;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background: var(--one);
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  padding-top: 0px;
+}
+.banner {
+  z-index: 1;
+  position: -webkit-sticky;
+  position: sticky; top: 0;
+  overflow: hidden; /* float fix */
+  background: var(--two);
+  border-top: 20px solid var(--one);
+  border-bottom: 2px solid var(--one);
+  margin-bottom: -2px;
+  padding: 4px 8px;
+}
+.board {
+  overflow: hidden; /* float fix */
+  background: var(--two);
+  margin: 2px 0px;
+  padding: 4px 8px;
+}
+.block {
+  background: white;
+  border: 2px solid var(--one);
+  box-shadow: 0px 2px var(--one);
+  transform: translateY(-2px);
+  margin: 8px 4px;
+  padding: 6px;
+}
+button {
+  float: left;
+  display: block;
+  background: var(--two);
+  border: 2px solid var(--one);
+  box-shadow: 0px 2px var(--one);
+  transform: translateY(-2px);
+  width: auto; /* margin auto fix */
+  margin: 8px 4px;
+  padding: 0px;
+}
+button:hover {
+  box-shadow: 0px 4px var(--one);
+  transform: translateY(-4px);
+}
+button:active {
+  box-shadow: none;
+  transform: translateY(0px);
+}
+button.active {
+  background: white;
+}
+.splash {
+  font-size: 25px;
+  line-height: 35px;
+  padding: 5px 7.5px 2.5px 10px;
+}
+.title {
+  font-size: 20px;
+  line-height: 28px;
+  padding: 4px 6px 2px 8px;
+}
+.text {
+  font-size: 15px;
+  line-height: 21px;
+  padding: 23px 24.5px 21.5px 26px;
+}
+.galbox {
+  width: calc(100% + 16px);
+  margin: -8px;
+}
+.gallery {
+  white-space: nowrap;
+  overflow-x: scroll;
+  max-width: 100%;
+  width: fit-content;
+  margin: 8px auto;
+  padding: 0px 8px;
+}
+.gallery::-webkit-scrollbar {
+  display: none;
+}
+img {
+  vertical-align: top;
+  border: 2px solid var(--one);
+  box-shadow: 0px 2px var(--one);
+  transform: translateY(-2px);
+  height: 300px;
+  margin: 8px 4px;
+}
+.vbar {
+  float: left;
+  background: var(--one);
+  box-shadow: 0px 2px var(--one);
+  transform: translateY(-2px);
+  width: 2px;
+  height: 38px;
+  margin: 8px 4px;
+}
