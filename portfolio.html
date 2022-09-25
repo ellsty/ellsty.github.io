@@ -340,6 +340,7 @@ Welcome, and thanks for visiting. Take a look at my gallery to see a sample of m
 
   <div class="tabcontent" id="projects">
 
+    <!--
     <div class="board" style="margin: 20px auto; width: fit-content">
 
         <div class="galbox">
@@ -353,10 +354,7 @@ Welcome, and thanks for visiting. Take a look at my gallery to see a sample of m
         </div>
 
     </div>
-
-  </div>
-
-<!--
+    -->
 
     <div class="board">
 
@@ -366,117 +364,214 @@ Welcome, and thanks for visiting. Take a look at my gallery to see a sample of m
         </div>
       </div>
 
-      <div class="block">
-        <div class="text">
-          In January of 2020, while working at an archery range in Brooklyn, I learned that many archers use playing cards for target practice. They are cheap, easy to find, and work as a great substitute for standard paper targets, while giving the extra challenge of being much smaller and harder to hit. I realized that the intricate symmetrical designs on the backs of standard playing cards were the perfect place for a design that resembled a classic archery target, letting the archers get the best of both worlds. I began working on the design, and decided to also loop the front of the cards, the pips and numerals, into the design language of the card backs I had been working on.
-        <br><br>
-          One of my favorite design details from anything anywhere is the rotational symmetry of playing cards. The fact that the cards can be in either orientation, totally shuffled, and still stay balanced and usable is so beautiful and simple to me. But, while working on these cards, I quickly discovered that that truth I held dear was false. Playing cards… are not perfectly rotationally symmetrical.
-        <br><br>
-          With that awful revelation still haunting me, I set to work building something better.
+      <div class="galbox">
+        <div class="gallery">
+          <img src="imgs/design/binary/pipnotation.png">
         </div>
       </div>
 
-      <div class="block">
-        <div class="text">
-          There are 2 main issues.
-          Here's the first:<br><br>
-          - on odd numbered cards, there is a single pip left over that doesn't have another to pair with, so you can't make a perfectly mirrored layout<br><br>
-          This has a simple solution: place the remaining pip in the center of the card. This means it maintains its location in both layouts.
-          Unfortunately, this is where the second issue comes in:<br><br>
-          - the pips themselves aren't totally symmetrical, so a single pip becomes upside-down when the card is in a different orientation<br><br>
-          Frustratingly, this is also true for a few even numbered cards. The 6 of each suit, for example, could easily be made to be perfectly symmetrical, but often isn't!
+      <div class="block" style="width: fit-content; margin: 16px auto 8px">
+        <div class="title" style="text-align: center;">
+          The Project
         </div>
       </div>
 
-      <div class="block">
-        <div class="text">
-          Again, there is a simple solution: if each individual pip was the same in both orientations, both even and odd cards would work.<br><br>
-          I worked for some time, iterating new pip designs that had that vertical symmetry. There seemed to be some nice opportunities, particularly with the legs of the black suits. But even when I had made designs I was happy with, they just weren't quite right. There is something so special about the classic designs, that it feels like you lose something by changing them so drastically. I also found that they were each harder to identify like this, having less differentiating details between them.
+      <div class="block" style="width: calc(50% - 8px); margin: 8px auto 16px">
+        <div class="text" style="text-align: center;">
+          Re-design the pip layout of a standard deck of playing cards to achive perfect rotational symmetry.
         </div>
       </div>
 
-      <div class="block">
-        <div class="text">
-          So with all that, our one-pip-in-the-center plan doesn't work.
-          But, I've narrowed it down to one crucial constraint:
-          <br><br>
-          - each card must have an even number of pips
-          <br><br>
-          At first, this seems like a lost cause. By nature, only half the cards would have an even number of pips (and in fact, if we include the jack, queen, and king for a full 13, only 6 are even, and 7 are odd).
-          <br><br>
-          Here's simple solution number 3:
-          <br><br>
-          - we mirror the full pip layout on both ends of the card
-          <br><br>
-          Interestingly, this option is largely infallible. Using the standard pip layout, and doubling it, it solves all our issues. There are no left over pips with no pair, each upside-down pip is balanced by an opposite right-side-up pip, and we get to use the classic pip designs with no problem.
+      <div class="block" style="width: fit-content; margin: 16px auto 8px">
+        <div class="title" style="text-align: center;">
+          The Problem
         </div>
       </div>
 
-      <div class="block">
-        <div class="text">
-          But just like with the new pip designs, this one just doesn't look right, and falls away from the primary purpose here: recognition. The doubled layout is messy and crowded, and it's hard to tell quite how many pips you're looking at, particularly when you get to higher numbers. With this layout, there's just too much going.
-          <br><br>
-          This made me realize 2 things:
-          <br><br>
-          - the elegant balance of a standard card design is a huge part of its success<br>
-          - The number of pips on the card might not be that important...
-
+      <div class="block" style="width: calc(50% - 8px); margin: 8px auto 16px">
+        <div class="text" style="text-align: center;">
+          Standard playing cards have subtle variations in different orientations. A number of cards (and in some cases, unnecissarily) make compromises in their symmetry to maintain the simplicity of the design. 
         </div>
       </div>
 
-      <div class="block">
-        <div class="text">
-          Bear with me here:
-          <br><br>
-          When you look at a playing card, how do you work out which card you're looking at? Do you look at the numbers in the corners? Do you count the number of pips? Do you recognize the shape the pips make?
-          <br><br>
-          Of those three, the answers to the first and third questions don't really matter. But I'd be willing to bet your answer to the second was "no." And that is huge. If the exact number of pips don't matter, then all we need for recognition is the numeral, and a layout of pips that is unique for each card.
+      <div class="block" style="width: fit-content; margin: 16px auto 8px">
+        <div class="title" style="text-align: center;">
+          The Process
         </div>
       </div>
 
-      <div class="block">
-        <div class="text">
-          This is where Binary Notation comes in.
-          <br><br>
-          When we doubled and mirrored all the pips on each card, our problem was mostly solved. The real issue with doubling is that you end up with too many pips. Instead, we can still double and mirror, but display the numbers with less pips, by counting in binary.
-          </div>
-      </div>
-
-      <div class="block">
-        <div class="text">
-          Some fresh (but classic) pip designs, a font that borrows from the same design language, and some flourishes to jazz up the card-back design, and we've arrived: a new deck of cards with its own special, perfectly symmetrical layout.
-          <br><br>
-          The Binary Deck
+      <div class="block" style="width: calc(50% - 8px); margin: 8px auto 16px">
+        <div class="text" style="text-align: center;">
+          Through ideation and experiementation, I disocvered a handful of alternatives to the standard layout, most of which weren't improvements.  I realized there was an opportunity in using the posistioning of the pips to hold information about each card's value, and binary notation was the perfect candidate. 
         </div>
       </div>
 
-      <div class="block">
-        <div class="text">
-          Each card has no more than 6 pips, and each has a unique formation, meaning that each card has is own identifiable visual pattern to be associated with its number.
-          <br><br>
-          And no matter the orientation, no matter how vigourously you shuffle the cards, the deck will always be identiaclly recognizable, and perfectly, inperceptably balanced.
+      <div class="block" style="width: fit-content; margin: 16px auto 8px">
+        <div class="title" style="text-align: center;">
+          The Product
+        </div>
+      </div>
+
+      <div class="block" style="width: calc(50% - 8px); margin: 8px auto 16px">
+        <div class="text" style="text-align: center;">
+          Using binary notation, the same numerical information is stored in the pip's layout, but allows for perfect symmetry, improving card recognition.
+        </div>
+      </div>
+
+      <div class="galbox">
+        <div class="gallery">
+          <img src="imgs/design/binary/xjqk.png" style="height: 200px">
         </div>
       </div>
 
     </div>
 
-    <div class="board" style="margin-top: 20px">
+    <!-- -->
+
+    <div class="board">
+
+      <div class="block" style="width: fit-content; margin: 16px auto 8px">
+        <div class="title" style="text-align: center;">
+          The Narrative
+        </div>
+      </div>
+
+        <div class="block">
+          <div class="text">
+            In January of 2020, while working at an archery range in Brooklyn, I learned that many archers use playing cards for target practice. They are cheap, easy to find, and work as a great substitute for standard paper targets, while giving the extra challenge of being much smaller and harder to hit. I realized that the intricate symmetrical designs on the backs of standard playing cards were the perfect place for a design that resembled a classic archery target, letting the archers get the best of both worlds. I began working on the design, and decided to also loop the front of the cards, the pips and numerals, into the design language of the card backs I had been working on.
+          <br><br>
+            One of my favorite design details from anything anywhere is the rotational symmetry of playing cards. The fact that the cards can be in either orientation, totally shuffled, and still stay balanced and usable is so beautiful and simple to me. But, while working on these cards, I quickly discovered that that truth I held dear was false. Playing cards… are not perfectly rotationally symmetrical.
+          <br><br>
+            With that awful revelation still haunting me, I set to work building something better.
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="text">
+            There are 2 main issues.
+            Here's the first:<br><br>
+            - on odd numbered cards, there is a single pip left over that doesn't have another to pair with, so you can't make a perfectly mirrored layout<br><br>
+            This has a simple solution: place the remaining pip in the center of the card. This means it maintains its location in both layouts.
+            Unfortunately, this is where the second issue comes in:<br><br>
+            - the pips themselves aren't totally symmetrical, so a single pip becomes upside-down when the card is in a different orientation<br><br>
+            Frustratingly, this is also true for a few even numbered cards. The 6 of each suit, for example, could easily be made to be perfectly symmetrical, but often isn't!
+          </div>
+        </div>
 
         <div class="galbox">
           <div class="gallery">
-            <div class="block" style="width: fit-content;">
-        <div class="text" style="text-align: center; padding: 3px 4.5px 1.5px 6px">
-          more projects are on their way...
-        </div>
-            </div>
+            <img src="imgs/design/binary/center7.png" style="height: 200px"><!--
+        --><img src="imgs/design/binary/normal6.png" style="height: 200px">
           </div>
         </div>
+
+        <div class="block">
+          <div class="text">
+            Again, there is a simple solution: if each individual pip was the same in both orientations, both even and odd cards would work.<br><br>
+            I worked for some time, iterating new pip designs that had that vertical symmetry. There seemed to be some nice opportunities, particularly with the legs of the black suits. But even when I had made designs I was happy with, they just weren't quite right. There is something so special about the classic designs, that it feels like you lose something by changing them so drastically. I also found that they were each harder to identify like this, having less differentiating details between them.
+          </div>
+        </div>
+
+        <div class="galbox">
+          <div class="gallery">
+            <img src="imgs/design/binary/doublepip6and7.png" style="height: 200px">
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="text">
+            So with all that, our one-pip-in-the-center plan doesn't work.
+            But, I've narrowed it down to one crucial constraint:
+            <br><br>
+            - each card must have an even number of pips
+            <br><br>
+            At first, this seems like a lost cause. By nature, only half the cards would have an even number of pips (and in fact, if we include the jack, queen, and king for a full 13, only 6 are even, and 7 are odd).
+            <br><br>
+            Here's simple solution number 3:
+            <br><br>
+            - we mirror the full pip layout on both ends of the card
+            <br><br>
+            Interestingly, this option is largely infallible. Using the standard pip layout, and doubling it, it solves all our issues. There are no left over pips with no pair, each upside-down pip is balanced by an opposite right-side-up pip, and we get to use the classic pip designs with no problem.
+          </div>
+        </div>
+
+        <div class="galbox">
+          <div class="gallery">
+            <img src="imgs/design/binary/mirror6.png" style="height: 200px">
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="text">
+            But just like with the new pip designs, this one just doesn't look right, and falls away from the primary purpose here: recognition. The doubled layout is messy and crowded, and it's hard to tell quite how many pips you're looking at, particularly when you get to higher numbers. With this layout, there's just too much going.
+            <br><br>
+            This made me realize 2 things:
+            <br><br>
+            - the elegant balance of a standard card design is a huge part of its success<br>
+            - The number of pips on the card might not be that important...
+
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="text">
+            Bear with me here:
+            <br><br>
+            When you look at a playing card, how do you work out which card you're looking at? Do you look at the numbers in the corners? Do you count the number of pips? Do you recognize the shape the pips make?
+            <br><br>
+            Of those three, the answers to the first and third questions don't really matter. But I'd be willing to bet your answer to the second was "no." And that is huge. If the exact number of pips don't matter, then all we need for recognition is the numeral, and a layout of pips that is unique for each card.
+          </div>
+        </div>
+
+        <div class="galbox">
+          <div class="gallery">
+            <img src="imgs/design/binary/numsandpips.png" style="height: 200px">
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="text">
+            This is where Binary Notation comes in.
+            <br><br>
+            When we doubled and mirrored all the pips on each card, our problem was mostly solved. The real issue with doubling is that you end up with too many pips. Instead, we can still double and mirror, but display the numbers with less pips, by counting in binary.
+            </div>
+        </div>
+
+        <div class="block">
+          <div class="text">
+            Some fresh (but classic) pip designs, a font that borrows from the same design language, and some flourishes to jazz up the card-back design, and we've arrived: a new deck of cards with its own special, perfectly symmetrical layout.
+            <br><br>
+            The Binary Deck
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="text">
+            Each card has no more than 6 pips, and each has a unique formation, meaning that each card has is own identifiable visual pattern to be associated with its number.
+            <br><br>
+            And no matter the orientation, no matter how vigourously you shuffle the cards, the deck will always be identiaclly recognizable, and perfectly, inperceptably balanced.
+          </div>
+        </div>
+
+      </div>
+
+      <div class="board" style="margin-top: 20px">
+
+          <div class="galbox">
+            <div class="gallery">
+              <div class="block" style="width: fit-content;">
+          <div class="text" style="text-align: center; padding: 3px 4.5px 1.5px 6px">
+            more projects are on their way...
+          </div>
+              </div>
+            </div>
+          </div>
+
+      </div>
 
     </div>
 
   </div>
-
--->
 
   <!-- -->
 
